@@ -1,21 +1,32 @@
-
-window.onload = function () {
-    // TODO:: Do your initialization job
-
-    // add eventListener for tizenhwkey
-    document.addEventListener('tizenhwkey', function(e) {
-        if(e.keyName == "back")
-	try {
-	    tizen.application.getCurrentApplication().exit();
-	} catch (ignore) {
+(function(global) {
+	
+	let count = 0;
+	
+	const document = global.document,
+		countText = document.getElementsByTagName('h1')[0],
+		increaseButton = document.getElementById("increase-btn"),
+		decreaseButton = document.getElementById("decrease-btn");
+	
+	
+	function updateCount() {
+		countText.innerHTML = count;
 	}
-    });
-
-    // Sample code
-    var textbox = document.querySelector('.contents');
-    textbox.addEventListener("click", function(){
-    	box = document.querySelector('#textbox');
-    	box.innerHTML = box.innerHTML == "Basic" ? "Sample" : "Basic";
-    });
-    
-};
+	
+	
+	function main() {
+		
+		increaseButton.addEventListener('click', function() {
+			count += 1;
+			updateCount();
+		});
+		
+		decreaseButton.addEventListener('click', function() {
+			count -= 1;
+			updateCount();
+		});
+	}
+		
+	updateCount();
+	main();
+	
+}(this));
