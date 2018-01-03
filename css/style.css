@@ -1,0 +1,63 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.content {
+	width: 100%;
+	background: red;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#count {
+	display: inline-block;
+	background: blue;
+	color: white;
+	margin-top: 20px;
+}
+
+#count h1 { 
+	font-size: 60px;
+	margin: 0
+}
+
+#count h2 {
+	font-size: 20px;
+	margin: 0;
+}
+
+#increase-btn {
+    background: url('../images/normal_state_plus.png') left top no-repeat;
+}
+
+#increase-btn:active {
+    background-image: url('../images/hover_state_plus.png');
+}
+
+#decrease-btn {
+    background: url('../images/normal_state_minus.png') left top no-repeat;
+}
+
+#decrease-btn:active {
+    background-image: url('../images/hover_state_minus.png');
+}
+
+.circle-button {
+	display: inline-block;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
