@@ -8,7 +8,7 @@
 </Reference>
 <Reference URI=".git%2FCOMMIT_EDITMSG">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>EZlkQViEF6J68QzXxear21cPGLHAAEj7OaLgd1J5c2w=</DigestValue>
+<DigestValue>ETXqmjEl7zy24ZshLuMzx1DtB9yk0FqQ0bmWDfVJGxY=</DigestValue>
 </Reference>
 <Reference URI=".git%2FHEAD">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -64,7 +64,7 @@
 </Reference>
 <Reference URI=".git%2Findex">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ejAbz/jjMqR2FIWtAZyzKsYPOUFqUEmqH4GwE4GhfEk=</DigestValue>
+<DigestValue>ymFYDuCyUAT8pmH532estIwPiT2QaXTg/jAJzRepA/k=</DigestValue>
 </Reference>
 <Reference URI=".git%2Finfo%2Fexclude">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -72,15 +72,15 @@
 </Reference>
 <Reference URI=".git%2Flogs%2FHEAD">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8v9cHkWJ6mhXjVhfPmeDuDJuSnXyLg8E2S+43qyfoQE=</DigestValue>
+<DigestValue>j6nt9CQ37A5FAcTZrWAJf9sx5HLBoJNFN2Qc3qCya7k=</DigestValue>
 </Reference>
 <Reference URI=".git%2Flogs%2Frefs%2Fheads%2Fmaster">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>8v9cHkWJ6mhXjVhfPmeDuDJuSnXyLg8E2S+43qyfoQE=</DigestValue>
+<DigestValue>j6nt9CQ37A5FAcTZrWAJf9sx5HLBoJNFN2Qc3qCya7k=</DigestValue>
 </Reference>
 <Reference URI=".git%2Flogs%2Frefs%2Fremotes%2Forigin%2Fmaster">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>/N+Ch3p8lnDUpyXgJ642StYerMeYlDSnlk4fUYA2J4w=</DigestValue>
+<DigestValue>CZqeXA33ruotFbxncPyY4xI5oBpdxRa8ytsJGujZRaM=</DigestValue>
 </Reference>
 <Reference URI=".git%2Fobjects%2F05%2Fbd71b6ec2c1982d1e8a5653073281994564ae8">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -188,11 +188,11 @@
 </Reference>
 <Reference URI=".git%2Frefs%2Fheads%2Fmaster">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Fw9koPCVNWT/Jnm0tCfx1VUIXgrox3GJK/ZOuBa3HoU=</DigestValue>
+<DigestValue>cF73rFxaElyV6jQFjhQtiZ7696XZ9Hs2r6HAlAMS8Ag=</DigestValue>
 </Reference>
 <Reference URI=".git%2Frefs%2Fremotes%2Forigin%2Fmaster">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Fw9koPCVNWT/Jnm0tCfx1VUIXgrox3GJK/ZOuBa3HoU=</DigestValue>
+<DigestValue>cF73rFxaElyV6jQFjhQtiZ7696XZ9Hs2r6HAlAMS8Ag=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -205,14 +205,6 @@
 <Reference URI="fonts%2FRoboto-Bold.ttf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>koeSXK6QrEgIBAlP8IdoMgZeLbEWRw2h9STXntnBi3A=</DigestValue>
-</Reference>
-<Reference URI="fonts%2FRoboto-Light.ttf">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>sXZnzn4TWB2xBXd/mG4UEWgjHoio7xbRPlgcfBUl8Us=</DigestValue>
-</Reference>
-<Reference URI="fonts%2FRoboto-Medium.ttf">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>0Mj0SndLhJDO7imInNq8cjgfo1+2IWGaeP0oIR2QJBw=</DigestValue>
 </Reference>
 <Reference URI="fonts%2FRoboto-Thin.ttf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -291,11 +283,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-PKrxfaMVJPqua6id4b6QKxdgMzVT5mDZ2GvTSc1QIK7Ej4FNLuL+yuvKScvtUkw2eWX9KbsO50Uy
-3rOgwfsay0GXFYJZlSogNAYRL0Kpqq1Iruc7tALHQuT6kCRSf4CCriJLOXt3JoQLT0EyhSGS359B
-oSTAztvSWBSH85GJOTzQzpQssBcO9DDJ2dcUqtYQeho4xBT/tj/zRLLlK2YD6uAFHtXefhiMHoil
-06nDgxpYXWtBUWptSlqwSkBJRhWZHM9Ek0smZsVi+SoVEh2SlmPL1WAweKSQ/4iYu4DsW7/NskUJ
-7JDZOGl+b/HZcQ8VYZHkbNwvEys0vbfZYdYNFA==
+lvxfLG0pP5Hu01YD1xBJ2y9yY+J8BvdBWA5hHLghMXXXw+aBqcSFmFD6JnDW01nxE9EAKGBKgKxF
+GzrK2Jr323OCO0TIad1dyJNtBlCYS4cLqFgsciDZsLmlr3QKkrbWmsAQyAiiQpxO+wmHFsBMATh1
+ecqPWXq0Icl1fyvdrxglGywC4Q/I4A8iY+TS9KfBIFCV16hVcrbo0AFf1yqBL9dMhe6EYzCbC50K
+G+scT+KKboo+u0oldwLAO/grf+DyTDwzXzMIaT+AHD2+kFU/ot9PI1TIZSZrLCWSsxDBvP9SJbey
+axJ2zNGW29cadhtX65KDxU6F2Bty1RgUquQ/jQ==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
