@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Counter" version="1.0.0" viewmodes="maximized">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Counter" version="1.0.0" viewmodes="fullscreen">
     <tizen:application id="qo6ruV3nmf.Counter" package="qo6ruV3nmf" required_version="3.0"/>
+    <author email="henry.teigar@gmail.com">Henry Teigar</author>
     <content src="index.html"/>
-    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <description>Counter+ is the simpliest and most intuitive counter app on the market. </description>
+    <feature name="tizen.org/feature/screen.shape.circle"/>
+    <feature name="tizen.org/feature/screen.size.normal.360.360"/>
     <icon src="icon.png"/>
-    <name>Counter</name>
+    <name>Counter+</name>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
     <tizen:profile name="wearable"/>
 </widget>

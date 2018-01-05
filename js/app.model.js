@@ -5,6 +5,7 @@ window.app = window.app || {};
 (function(app) {
 	
 	var currentBadgeCount = 0,
+		countText = null,
 		applicationId = '';
 	
 	function getApplicationId() {
@@ -23,34 +24,17 @@ window.app = window.app || {};
         }
     }
 	
-	function setBadgeChangeListener() {
-        try {
-            tizen.badge.addChangeListener([applicationId],
-                onBadgeChange);
-        } catch (error) {
-            console.error('setBadgeChangeListener error: ', error);
-        }
-    }
+	function updateBadgeCount(value) {
+		changeBadgeCount(value)
+	}
 	
-	function onBadgeChange(applicationId, badgeCount) {
-        currentBadgeCount = badgeCount;
-        app.common.dispatchEvent('model.badgevaluechange');
-    }
 	
-	function increaseBadgeCount() {
-        changeBadgeCount(currentBadgeCount + 1);
-    }
-	
-	function decreaseBadgeCount() {
-        changeBadgeCount(currentBadgeCount - 1);
-    }
 	
 	function changeBadgeCount(newValue) {
         try {
-            tizen.badge.setBadgeCount(applicationId, newValue);
+        	tizen.badge.setBadgeCount(applicationId, newValue)
         } catch (error) {
-            console.error('setBadgeCount error: ', error);
-            app.common.dispatchEvent('model.badgevaluechange.error');
+        	tizen.badge.setBadgeCount(applicationId, 0)
         }
 
 	}
@@ -60,15 +44,14 @@ window.app = window.app || {};
     }
 	
 	function init() {
+		countText = document.getElementById('count-number');
         applicationId = getApplicationId();
         currentBadgeCount = getBadgeCount();
-        setBadgeChangeListener();
     }
 
     app.model = {
         init: init,
-        increaseBadgeCount: increaseBadgeCount,
-        decreaseBadgeCount: decreaseBadgeCount,
+        updateBadgeCount: updateBadgeCount,
         getCurrentBadgeCount: getCurrentBadgeCount
     };
 

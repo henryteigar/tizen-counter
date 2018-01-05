@@ -2,28 +2,48 @@ window.app = window.app || {};
 
 (function(app) {
 	
-	var count = 0,
-		countText = null,
+	var countText = null,
 		increaseButton = null,
 		decreaseButton = null;
 	
+	function increaseCount() {
+		var newCount = parseInt(countText.innerHTML) + 1;
+		countText.innerHTML = newCount;
+	}
+	
+	function decreaseCount() {
+		var newCount = parseInt(countText.innerHTML) - 1;
+		countText.innerHTML = newCount;
+	}
+	
 	function onIncreaseButtonClick() {
-		app.model.increaseBadgeCount();
+		increaseCount()
 	}
 	
 	function onDecreaseButtonClick() {
-        app.model.decreaseBadgeCount();
-    }
-	
-	function onBadgeValueChange() {
-		count = app.model.getCurrentBadgeCount();
-		countText.innerHTML = count;
+		decreaseCount()
     }
 	
 	function bindUiEvents() {
 		increaseButton.addEventListener('click', onIncreaseButtonClick);
 		decreaseButton.addEventListener('click', onDecreaseButtonClick);
-		window.addEventListener('model.badgevaluechange', onBadgeValueChange);
+	}
+	
+	function addRotaryEventHandler() {
+		document.addEventListener('rotarydetent', function(ev) {
+		    var direction = ev.detail.direction;
+		    if (direction == 'CW') {
+		    	increaseCount();
+		    } else if (direction == 'CCW') {
+		    	 decreaseCount();
+		    }
+		});
+	}
+	
+	function updateBadgeInBackground() {
+		if (countText) {
+			app.model.updateBadgeCount(countText.innerHTML);
+		}
 	}
 	
 	function init() {
@@ -31,7 +51,9 @@ window.app = window.app || {};
 		increaseButton = document.getElementById("increase-btn");
 		decreaseButton = document.getElementById("decrease-btn");
 		countText.innerText = app.model.getCurrentBadgeCount();
+		setInterval(updateBadgeInBackground, 200);
 		bindUiEvents();
+		addRotaryEventHandler();
 	}
 	
 	app.ui = {
