@@ -18,7 +18,7 @@ window.app = window.app || {};
 	
 	function getBadgeCount() {
         try {
-            return tizen.badge.getBadgeCount(applicationId);
+        	return tizen.badge.getBadgeCount(applicationId);
         } catch (error) {
             console.error('getBadgeCount error: ', error);
         }
@@ -47,6 +47,8 @@ window.app = window.app || {};
 		countText = document.getElementById('count-number');
         applicationId = getApplicationId();
         currentBadgeCount = getBadgeCount();
+        document.getElementById('loading').style.display = "none";
+        //document.getElementsByClassName('content')[0].style.display = "block";
     }
 
     app.model = {

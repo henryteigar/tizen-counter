@@ -4,10 +4,11 @@ window.app = window.app || {};
 	
 	var countText = null,
 		increaseButton = null,
-		decreaseButton = null;
+		decreaseButton = null
 	
 	function increaseCount() {
 		var newCount = parseInt(countText.innerHTML) + 1;
+		//countText.style.fontSize = "20px";
 		countText.innerHTML = newCount;
 	}
 	
@@ -21,6 +22,8 @@ window.app = window.app || {};
 	}
 	
 	function onDecreaseButtonClick() {
+		console.log(screen.height)
+		//console.log(tizen.systeminfo.getCapability("http://tizen.org/feature/systemInfoDisplay/resolutionWidth"))
 		decreaseCount()
     }
 	

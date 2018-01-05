@@ -22,9 +22,9 @@ window.app = window.app || {};
     }
     
 	function init() {
-		app.ui.init();
+		bindEvents();
         app.model.init();
-        bindEvents();
+        app.ui.init();
     }
 	
 	window.addEventListener('load', init);

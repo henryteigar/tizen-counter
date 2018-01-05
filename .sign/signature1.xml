@@ -8,7 +8,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>PMIi2l+pLrYRd43C28uR+W2ZtA2e3eZIWuXwnLcrgtw=</DigestValue>
+<DigestValue>jWbBmXmokJpYlXngU52UNF45A9DioqHhbshYl2Olbio=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -16,7 +16,7 @@
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>XDCJd58F24uus4+C47kOTAcJE5Ikf+ayxFKqmbcXnTo=</DigestValue>
+<DigestValue>A8rj3mizmYWeJGicxAjjucS/fOk4hmNm0LY6kmZCows=</DigestValue>
 </Reference>
 <Reference URI="fonts%2FRoboto-Bold.ttf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -34,6 +34,10 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>zgykYtbCOUP8uXuaN1vWedlb13ZquX6YUtrRiyWBkFg=</DigestValue>
 </Reference>
+<Reference URI="images%2Fminus.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>uxRcZicR12e+gcG+2F8uj3G8Q/sFLQabmm9kiA9MQCA=</DigestValue>
+</Reference>
 <Reference URI="images%2Fminus_active.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>WvGcYyLk1owoBWKgcWDrnjt92uRaXXNVwNNnUx7+V0c=</DigestValue>
@@ -42,13 +46,17 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>axHKLskB+rcOE0VHVc0HGJFvFHP+hrf9yFwe86ovey8=</DigestValue>
 </Reference>
+<Reference URI="images%2Fplus.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Xxed/ZPGVFLSSD7B9/7wnCA94oH+laE8fo7rlImt4Zg=</DigestValue>
+</Reference>
 <Reference URI="images%2Fplus_active.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>SeMQcjay4BLb6tzHD7pBV/XbC+JYQIqRvUgwgdFXWdA=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>z09si1EHf7Q620dsI8tTXsyZpAVTJaTDUZHYvb8U4pw=</DigestValue>
+<DigestValue>cQQd+OTtl/yJESPJ5JUo6AEU4CR0ui46gnWmRGfFszs=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.common.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,15 +64,15 @@
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>jy06r/2h3jT6rJ3tkQplON/2az4I0Yzx2/UIMQ5Zlg0=</DigestValue>
+<DigestValue>gxrssCxJkAPJkmxxk6WIocsXxsJ6bHwCQ5czRWc/pWU=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.model.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Ns4NvtBRQKb29enaTxiOOFkzsnanpU5prTvlpMjwuMo=</DigestValue>
+<DigestValue>//uc2zIgV9/RCWsf/mjfgAyAE2Y/6VZvVLG0sDZfnLo=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.ui.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>WsaJfGdQ3au/gvU/mZ1wDT9g/TWmvbDB6QBAHhyvMfA=</DigestValue>
+<DigestValue>7emguGyKYzG18OusZIAU0s3bbHtsnbXgi2iqn5BErnI=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -75,11 +83,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-gyIEtOv3vWWeFxYwV9ua3rtf6HR+G3U7WJL/qbA0+C/kLErUINzSzdzYpJqgJW+hCPIedYGlcQZX
-x45ZS4d75z51dV1sUDv0VhJ04H9fAKogI+NCMJRldBabUD/kttlZNQtSGvNIWJ++BwlikBVzNVZW
-l1RFhLd8GPFHhk7UZ/8iRsIDkRSA9zKkdG4za0CoEZv1GKhBXL53ExfASIeoiKzwNNx4ZBZpKv+3
-CXv3KqQy5jrk2wgpxe6nnUYOz9PsSMBpibyhniwtc4pFmBZySLpyF/+UlhYtFQvr1Fo4uSTc28Gw
-lK2vfemWwW/lAWrshJtuc27zel7juhzhcEU7GQ==
+aoKNo/4zZnzp/3z6Y67jQHBmaXChzVv8sS2gm3gMniW2CoLIWqVTIejr8aU/cYtr7WTZy0wuyUMZ
+iyaJWUB8/7n3USctxruGBXFIIwMfJB4hZkI9vCUHUF94yL3NqTaJNWpmXOSUnMAFSh+KX/ENhRLh
+OUAB8R7Vv40S4EdqAHPtqi08uh0u77h3nl4PkKPOxPvDXUkZRdSmXr22H00YD1xgDha7tyLYOtbX
+BQJWhccOQLL36cdqjrs+mILEzaSpXrZfuC8b1NFMxOG7xgyvDv8gem8wnN+3L//7edwrY8w99C3r
+UbaFrx8b6qJRup2MvHwmrNHIkhpbsg90s8JFxg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
