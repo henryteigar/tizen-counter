@@ -8,7 +8,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>jWbBmXmokJpYlXngU52UNF45A9DioqHhbshYl2Olbio=</DigestValue>
+<DigestValue>10sBWbP+D0XTkoOo2OZK1VWiqVGRtUjy2HUtUGnG26o=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -16,7 +16,7 @@
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>A8rj3mizmYWeJGicxAjjucS/fOk4hmNm0LY6kmZCows=</DigestValue>
+<DigestValue>GRjOEnZ50yd/e/TuiRszUVM3gTLqcHRy80YBZd8cW8k=</DigestValue>
 </Reference>
 <Reference URI="fonts%2FRoboto-Bold.ttf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,7 +56,7 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>cQQd+OTtl/yJESPJ5JUo6AEU4CR0ui46gnWmRGfFszs=</DigestValue>
+<DigestValue>ZhC+IsjCUQ21/4pw+Ir3BBn/phc643IkVCkxjm9ZJV4=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.common.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -83,11 +83,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-aoKNo/4zZnzp/3z6Y67jQHBmaXChzVv8sS2gm3gMniW2CoLIWqVTIejr8aU/cYtr7WTZy0wuyUMZ
-iyaJWUB8/7n3USctxruGBXFIIwMfJB4hZkI9vCUHUF94yL3NqTaJNWpmXOSUnMAFSh+KX/ENhRLh
-OUAB8R7Vv40S4EdqAHPtqi08uh0u77h3nl4PkKPOxPvDXUkZRdSmXr22H00YD1xgDha7tyLYOtbX
-BQJWhccOQLL36cdqjrs+mILEzaSpXrZfuC8b1NFMxOG7xgyvDv8gem8wnN+3L//7edwrY8w99C3r
-UbaFrx8b6qJRup2MvHwmrNHIkhpbsg90s8JFxg==
+glt1GW7Zv6lwcbliSUA0/9IQtIRfGfR5/Dp9ZGmy3E6ZaOGhzVhN1w9xxBewzf58wO8cf/ce+5hE
+umLbY1vxcSnp+BTOldbVOVm39d7p9Qze/4+efB/+wsgfZy1l6aifZogITQ7jWDFYEyI7EpIHnrGK
+9QKIsQ43u4X1+rWmB5pSMwwBBY64P5TriZwxTjmEuH69KUMxIWGg8D0ZAAIsqE4bNEeaFy+oibFJ
+3kThawR477JSemn4FZP6V6ijJNbMg1tAjROjpQRJ/3PWCFCABlSvEVKNCHgCainHYTkK11vPV9GS
+ZlLtQPbDBYijPFhLBGjlwtT9DbfFG16bbyP5Dg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

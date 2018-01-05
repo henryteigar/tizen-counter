@@ -38,7 +38,7 @@ body {
 
 .count h1 { 
 	margin: 0;
-	font: 80px roboto-bold;
+	font: 90px roboto-bold;
 	line-height: 0px;
 	font-weight: 900;
 	
@@ -50,6 +50,27 @@ body {
 	font-weight: 100;
 	line-height: 70px;
 	
+}
+
+.reset {
+	color: #3f3f3f;
+	position: absolute;
+	bottom: 30px;
+	height: 30px;
+	width: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 15px;
+	border: 1px solid #3f3f3f;
+}
+
+.reset p {
+	text-align: center;
+	font: 20px roboto-thin;
+	color: #3f3f3f;
+	font-weight: 100;
+	margin: 0;
+	line-height: 30px;
 }
 
 #increase-btn {
@@ -73,11 +94,15 @@ body {
 .circle-button {
 	display: inline-block;
     border-radius: 50%;
-    background: gray;
+    background: #3f3f3f;
     height: 70px;
     width: 70px;
     top: 50%;
 	transform: translateY(-50%);
 	position: relative;
 	z-index: 0;
+}
+
+.circle-button:active {
+	background: #6f6f6f;
 }
