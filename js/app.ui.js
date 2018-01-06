@@ -1,77 +1,59 @@
+/*jslint browser */
+/*global window, tizen, console, document */
+
 window.app = window.app || {};
 
-(function(app) {
-	
-	var countText = null,
-		increaseButton = null,
-		decreaseButton = null
-	
-//	function increaseCount() {
-//		var newCount = parseInt(countText.innerHTML) + 1;
-//		//countText.style.fontSize = "20px";
-//		countText.innerHTML = newCount;
-//	}
-//	
-//	function decreaseCount() {
-//		var newCount = parseInt(countText.innerHTML) - 1;
-//		countText.innerHTML = newCount;
-//	}
-	
-	function onIncreaseButtonClick() {
-		var count = app.model.getCurrentCount();
-		var newCount = +(count) + 1;
-		app.model.updateCount(newCount);
-		updateCount(newCount)
-	}
-	
-	function onDecreaseButtonClick() {
-//		console.log(screen.height)
-		//console.log(tizen.systeminfo.getCapability("http://tizen.org/feature/systemInfoDisplay/resolutionWidth"))
-		var count = app.model.getCurrentCount();
-		var newCount = +(count) - 1
-		app.model.updateCount(newCount);
-		updateCount(newCount)
+(function (app) {
+    "use strict";
+
+    var countText;
+    var increaseButton;
+    var decreaseButton;
+
+    function changeCount(change) {
+        var count = app.model.getCount();
+        var newCount = Number(count) + change;
+
+        countText.innerHTML = newCount;
+        app.model.setCount(newCount);
     }
-	
-	function updateCount(count) {
-		countText.innerHTML = count;
-	}
-	
-	function bindUiEvents() {
-		increaseButton.addEventListener('click', onIncreaseButtonClick);
-		decreaseButton.addEventListener('click', onDecreaseButtonClick);
-	}
-	
-	function addRotaryEventHandler() {
-		document.addEventListener('rotarydetent', function(ev) {
-		    var direction = ev.detail.direction;
-		    if (direction == 'CW') {
-		    	onIncreaseButtonClick();
-		    } else if (direction == 'CCW') {
-		    	onDecreaseButtonClick();
-		    }
-		});
-	}
-	
-//	function updateBadgeInBackground() {
-//		if (countText) {
-//			app.model.updateBadgeCount(countText.innerHTML);
-//		}
-//	}
-//	
-	function init() {
-		countText = document.getElementById('count-number');
-		increaseButton = document.getElementById("increase-btn");
-		decreaseButton = document.getElementById("decrease-btn");
-		console.log(app.model.getCurrentCount())
-		bindUiEvents();
-		countText.innerHTML = app.model.getCurrentCount();
-//		setInterval(updateBadgeInBackground, 200);
-		addRotaryEventHandler();
-	}
-	
-	app.ui = {
-		init: init
-	};
-	
+
+    function increaseCount() {
+        changeCount(1);
+    }
+
+    function decreaseCount() {
+        changeCount(-1);
+    }
+
+    function bindUiEvents() {
+        increaseButton.addEventListener("click", increaseCount);
+        decreaseButton.addEventListener("click", decreaseCount);
+    }
+
+    function addRotaryEventHandler() {
+        document.addEventListener("rotarydetent", function (ev) {
+            var direction = ev.detail.direction;
+            if (direction === "CW") {
+                increaseCount();
+            } else if (direction === "CCW") {
+                decreaseCount();
+            }
+        });
+    }
+
+    function init() {
+        countText = document.getElementById("count-number");
+        increaseButton = document.getElementById("increase-btn");
+        decreaseButton = document.getElementById("decrease-btn");
+        countText.innerHTML = app.model.getCount();
+
+        bindUiEvents();
+        addRotaryEventHandler();
+    }
+
+    app.ui = {
+        init: init
+    };
+
 }(window.app));

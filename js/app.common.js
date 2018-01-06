@@ -1,13 +1,17 @@
+/*jslint browser */
+/*global window */
+
 window.app = window.app || {};
 
 (function defineAppCommon(app) {
+    "use strict";
 
     app.common = app.common || {};
 
     app.common.pad = function pad(input, length, padString) {
         input = String(input);
         length = length || 2;
-        padString = padString || '0';
+        padString = padString || "0";
 
         while (input.length < length) {
             input = padString + input;
@@ -25,4 +29,4 @@ window.app = window.app || {};
         window.dispatchEvent(customEvent);
     };
 
-})(window.app);
+}(window.app));
