@@ -39,7 +39,7 @@ body {
 .count h1 { 
 	margin: 0;
 	font: 90px roboto-bold;
-	line-height: 0px;
+	line-height: 0;
 	font-weight: 900;
 	
 	
@@ -53,48 +53,50 @@ body {
 }
 
 .reset {
-	color: #3f3f3f;
+	color: #2e2e2e;
 	position: absolute;
 	bottom: 30px;
-	height: 30px;
+	height: 35px;
 	width: 110px;
 	left: 50%;
 	transform: translateX(-50%);
-	border-radius: 15px;
-	border: 1px solid #3f3f3f;
+	border-radius: 18px;
+	border: 2px solid #2e2e2e;
+}
+
+.reset:active {
+	background: #2e2e2e;
+}
+
+.reset:active p {
+	color: black;
 }
 
 .reset p {
 	text-align: center;
-	font: 20px roboto-thin;
-	color: #3f3f3f;
+	font: 25px roboto-thin;
+	color: #2e2e2e;
 	font-weight: 100;
 	margin: 0;
-	line-height: 30px;
+	line-height: 36px;
 }
 
 #increase-btn {
 	position: absolute;
-    right: 10px;
+    right: 15px;
 }
 
-#increase-btn:active {
-    
-}
 
 #decrease-btn {
     position: absolute;
-    left: 10px;
+    left: 15px;
 }
 
-#decrease-btn:active {
-
-}
 
 .circle-button {
 	display: inline-block;
     border-radius: 50%;
-    background: #3f3f3f;
+    background: #1c1c1c;
     height: 70px;
     width: 70px;
     top: 50%;
@@ -103,6 +105,17 @@ body {
 	z-index: 0;
 }
 
+.circle-button img {
+	position: absolute;
+	margin: 0;
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	
+	
+}
+
 .circle-button:active {
-	background: #6f6f6f;
+	background: #3f3f3f;
 }

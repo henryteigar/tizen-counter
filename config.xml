@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Counter" version="1.0.0" viewmodes="fullscreen">
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Counter" version="1.0.0" viewmodes="fullscreen">
     <tizen:application id="qo6ruV3nmf.Counter" package="qo6ruV3nmf" required_version="3.0"/>
     <author email="henry.teigar@gmail.com">Henry Teigar</author>
     <content src="index.html"/>
