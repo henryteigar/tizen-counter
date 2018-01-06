@@ -7,13 +7,7 @@ window.app = window.app || {};
     "use strict";
 
     function getLocalStorageCount() {
-        var count = localStorage.getItem("count");
-
-        if (count !== null) {
-            return count;
-        } else {
-            return 0;
-        }
+        return localStorage.getItem("count");
     }
 
     function setLocalStorageCount(count) {
@@ -21,6 +15,7 @@ window.app = window.app || {};
     }
 
     function init() {
+        setLocalStorageCount(0);
         document.getElementById("loading").style.display = "none";
     }
 

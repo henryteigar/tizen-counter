@@ -9,13 +9,18 @@ window.app = window.app || {};
     var countText;
     var increaseButton;
     var decreaseButton;
+    var resetButton;
+
+    function setCount(count) {
+        countText.innerHTML = count;
+        app.model.setCount(count);
+    }
 
     function changeCount(change) {
         var count = app.model.getCount();
-        var newCount = Number(count) + change;
+        var newCount = count + change;
 
-        countText.innerHTML = newCount;
-        app.model.setCount(newCount);
+        setCount(newCount);
     }
 
     function increaseCount() {
@@ -26,14 +31,20 @@ window.app = window.app || {};
         changeCount(-1);
     }
 
+    function resetCount() {
+        setCount(0);
+    }
+
     function bindUiEvents() {
         increaseButton.addEventListener("click", increaseCount);
         decreaseButton.addEventListener("click", decreaseCount);
+        resetButton.addEventListener("click", resetCount);
     }
 
     function addRotaryEventHandler() {
         document.addEventListener("rotarydetent", function (ev) {
             var direction = ev.detail.direction;
+
             if (direction === "CW") {
                 increaseCount();
             } else if (direction === "CCW") {
@@ -46,6 +57,7 @@ window.app = window.app || {};
         countText = document.getElementById("count-number");
         increaseButton = document.getElementById("increase-btn");
         decreaseButton = document.getElementById("decrease-btn");
+        resetButton = document.getElementById("reset-btn");
         countText.innerHTML = app.model.getCount();
 
         bindUiEvents();
