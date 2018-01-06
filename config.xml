@@ -10,9 +10,7 @@ Main Features:
 * Opportunity to change values with bezel
 * Saving the last value (even if closing the app)
 * Multiscreen support</description>
-    <feature name="tizen.org/feature/screen.size.normal.360.360"/>
-    <feature name="tizen.org/feature/screen.size.normal.320.320"/>
-    <feature name="tizen.org/feature/screen.size.normal.320.480"/>
+    <feature name="tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
     <name>Counter+</name>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
