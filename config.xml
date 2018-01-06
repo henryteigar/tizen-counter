@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Counter" version="1.0.0" viewmodes="fullscreen">
-    <tizen:application id="qo6ruV3nmf.Counter" package="qo6ruV3nmf" required_version="3.0"/>
+    <tizen:application id="qo6ruV3nmf.Counter" package="qo6ruV3nmf" required_version="2.0"/>
     <author email="henry.teigar@gmail.com">Henry Teigar</author>
     <content src="index.html"/>
-    <description>Counter+ is the simpliest and most intuitive counter app on the market. </description>
-    <feature name="tizen.org/feature/screen.shape.circle"/>
+    <description>Counter+ is the simpliest and most intuitive counter app on the market.
+
+Main Features:
+
+* Opportunity to change values with bezel
+* Saving the last value (even if closing the app)
+* Multiscreen support</description>
     <feature name="tizen.org/feature/screen.size.normal.360.360"/>
+    <feature name="tizen.org/feature/screen.size.normal.320.320"/>
+    <feature name="tizen.org/feature/screen.size.normal.320.480"/>
     <icon src="icon.png"/>
     <name>Counter+</name>
     <tizen:privilege name="http://tizen.org/privilege/notification"/>
     <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
