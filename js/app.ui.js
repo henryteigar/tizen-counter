@@ -18,7 +18,7 @@ window.app = window.app || {};
 
     function changeCount(change) {
         var count = app.model.getCount();
-        var newCount = count + change;
+        var newCount = Number(count) + change;
 
         setCount(newCount);
     }
